@@ -1,0 +1,143 @@
+:root {
+   --color1: rgb(255, 255, 255);
+   --color2: rgb(35, 57, 63);
+   --color3: rgb(66, 96, 121);
+}
+
+#container {
+  border: 2px solid rgb(0, 0, 0);
+  display: grid;
+  grid-template-rows: 1fr 55px 1fr;
+  height: 90vh;
+  margin: 2% 2%;
+}
+
+#tops {
+  background-color: var(--color2) ;
+  background-image: url('https://preview.redd.it/robotics-lab-concept-for-upcoming-project-modelled-in-v0-8w5b4ka7x8b81.png?auto=webp&s=c9876da19eb31729125b46ecdaa15312a122ae05');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  grid-auto-flow: row;
+}
+
+#bottoms {
+  
+  background-image: url('https://img.freepik.com/premium-photo/abstract-backgound-video-game-esports-scifi-gaming-cyberpunk-vr-virtual-reality-simulation-metaverse-scene-stand-pedestal-stage-3d-illustration-rendering-futuristic-neon-glow-room_42100-4727.jpg?w=2000');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  grid-auto-flow: row;
+}
+
+.persondivcss {
+  height: 115px;
+  width: 100px;
+  margin: 13px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 6px;
+  background:#fff;
+  border: 1px black solid;
+  cursor:alias;
+  
+  position: relative;
+}
+
+#person {
+  overflow: hidden;
+  background-color: #ffffffbb;
+  border-radius: 4px;
+}
+
+.upper {
+  background-color: rgba(44, 165, 202, 0.774);
+  border: solid 1px #000;
+  animation: shadow-pulse 1s infinite;
+  box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.upper:hover {
+  background-color: rgba(31, 181, 226, 0.87);
+}
+
+.downer {
+  background-color: rgba(197, 197, 197, 0.616);
+}
+.downer:hover {
+  background-color: rgba(112, 177, 197, 0.616);
+}
+
+@keyframes shadow-pulse {
+  0% 
+  {
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
+  }
+  50%
+  {
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #00ffea91, 0 0 12px #00fff2b0, 0 0 15px #00e1ff;
+  }
+  100%
+  {
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
+  }}
+
+
+#ui {
+ 
+  background-color: var(--color3) ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10% 0 10%;
+  
+  box-shadow: 0 -2px 3px #fff, 0 -9px 52px 6px #00f7ff8a, 0 -5px 9px #00ffea;
+  
+}
+
+#ui input, select, button{
+  max-width: 200px;
+  max-height: 20px;
+  margin: 6px 6px;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+  
+}
+
+.deletebtn {
+width: 20px;
+height: 20px;
+color: white;
+cursor: pointer;
+position: absolute;
+bottom: 0;
+left: 2px;
+border: 1px black solid;
+background-color: rgb(206, 106, 75);
+text-align: center;
+font-size: 10px;
+
+}
+
+.timer {
+position: absolute;
+bottom: -10px;
+left: 30px;
+border: 1px black solid;
+width: 74px;
+background-color: rgb(126, 246, 255);
+overflow: hidden;
+}
+
+.text {
+  background-color: rgb(255, 255, 255);
+  padding: 0 5px;
+  border: 1px black solid;
+}
+
