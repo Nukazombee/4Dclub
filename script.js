@@ -147,8 +147,9 @@ const addbtn = document.querySelector("#addbtn");
 
 let kyle = createPerson("Kyle", "Gale", 120, "Galaxian");
 let maria = createPerson("Maria", "Veraads", 300, "Star Wars");
-let vlad = createPerson("Vlad", "Litkinson", 10, "Star Wars");
-let olga = createPerson("Olga", "Semechko", 15, "Railroad");
+let vlad = createPerson("Vlad", "", 10, "Star Wars");
+let olga = createPerson("Olga", "S", 15, "Railroad");
+
 
 addbtn.addEventListener("click", function() 
   {
