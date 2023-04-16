@@ -17,7 +17,7 @@ const addbtn = document.querySelector("#addbtn");
     const persondiv = document.createElement("div");
     persondiv.classList.add("persondivcss", "upper");
     persondiv.innerHTML = 
-    `<div id="person">${firstName} ${lastName} <br> ${age}<br> <b>${job}</b></div>`;
+    `<div id="person">${firstName} <br> ${lastName} <br> ${age}<br> <b>${job}</b></div>`;
     tops.appendChild(persondiv);
 
     let delbtn = document.createElement("button");
@@ -116,7 +116,7 @@ const addbtn = document.querySelector("#addbtn");
       text.style.left = event.pageX + 10 + "px";
       text.style.top = event.pageY + 10 + "px";
       text.style.display = "block";
-      text.innerHTML = "Delete patient";
+      text.innerHTML = "Close game";
     });    
     
 
@@ -128,15 +128,15 @@ const addbtn = document.querySelector("#addbtn");
       text.style.display = "block";
       if (persondiv.classList.contains("upper") && ogage != "Completed")
       {
-        text.innerHTML = "Pause procedure";
+        text.innerHTML = "Pause game";
       }
       else if (persondiv.classList.contains("downer") && timer.innerHTML == "Completed")
       {
-        text.innerHTML = "Repeat procedure";
+        text.innerHTML = "Repeat game";
       }      
       else if (persondiv.classList.contains("downer") && timer.innerHTML != "Completed")
       {
-        text.innerHTML = "Resume procedure";
+        text.innerHTML = "Resume game";
       }
     });
 
@@ -145,10 +145,10 @@ const addbtn = document.querySelector("#addbtn");
     });    
   }
 
-let kyle = createPerson("Kyle", "Gale", 66, "Hybernation");
-let maria = createPerson("Maria", "Veraads", 15, "Brainwashing");
-let vlad = createPerson("Vlad", "Litkinson", 23, "Hybernation");
-let olga = createPerson("Olga", "Semechko", 42, "Brainwashing");
+let kyle = createPerson("Kyle", "Gale", 120, "Galaxian");
+let maria = createPerson("Maria", "Veraads", 300, "Star Wars");
+let vlad = createPerson("Vlad", "Litkinson", 10, "Star Wars");
+let olga = createPerson("Olga", "Semechko", 15, "Railroad");
 
 addbtn.addEventListener("click", function() 
   {

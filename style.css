@@ -1,138 +1,209 @@
 :root {
-   --color1: rgb(255, 255, 255);
-   --color2: rgb(35, 57, 63);
-   --color3: rgb(66, 96, 121);
+   --color1: rgb(218, 218, 218);
+   --color2: rgb(59, 59, 59);
+   --color3: rgb(148, 38, 10);
+}
+
+* {
+  font-family:'Gemunu Libre', sans-serif;
 }
 
 #container {
   border: 2px solid rgb(0, 0, 0);
   display: grid;
-  grid-template-rows: 1fr 55px 1fr;
+  grid-template-rows: 1.5fr 55px 1fr;  
   height: 90vh;
   margin: 2% 2%;
 }
 
 #tops {
-  background-color: var(--color2) ;
-  background-image: url('https://preview.redd.it/robotics-lab-concept-for-upcoming-project-modelled-in-v0-8w5b4ka7x8b81.png?auto=webp&s=c9876da19eb31729125b46ecdaa15312a122ae05');
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--color2) ;  
+  background-image: url('https://www.roadtovr.com/wp-content/uploads/2013/05/vrcade1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position:center;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
   grid-auto-flow: row;
 }
 
-#bottoms {
-  
+#bottoms {  
   background-image: url('https://img.freepik.com/premium-photo/abstract-backgound-video-game-esports-scifi-gaming-cyberpunk-vr-virtual-reality-simulation-metaverse-scene-stand-pedestal-stage-3d-illustration-rendering-futuristic-neon-glow-room_42100-4727.jpg?w=2000');
-  background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
   grid-auto-flow: row;
 }
 
 .persondivcss {
-  height: 115px;
-  width: 100px;
+  height: 215px;
+  width: 150px;
   margin: 13px;
   padding: 7px;
   text-align: center;
-  border-radius: 6px;
-  background:#fff;
-  border: 1px black solid;
-  cursor:alias;
-  
+  border-radius: 6px;  
+  border-top: rgb(240, 240, 240) solid 3px;  
+  border-right: rgb(161, 161, 161) solid 3px; 
+  border-bottom: rgb(29, 29, 29) solid 3px;   
+  border-left:rgb(204, 204, 204) solid 3px;  
+  cursor:pointer;  
   position: relative;
 }
 
 #person {
   overflow: hidden;
-  background-color: #ffffffbb;
-  border-radius: 4px;
+  height: 110px;
+  background-color: #111111;  
+  color: rgb(255, 208, 1);
+  border-top: rgb(19, 19, 19) solid 3px;  
+  border-right: rgb(143, 143, 143) solid 3px; 
+  border-bottom: rgb(182, 182, 182) solid 3px;   
+  border-left:rgb(109, 109, 109) solid 3px;  
+  border-radius: 6px;
+  padding: 0 10px 10px;
+  margin: 10px;
+  font-size: 21px;
 }
 
+.deletebtn {
+  width: 30px;
+  height: 30px;
+  color: rgb(151, 141, 2);
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 0;  
+  background-color: rgb(48, 48, 48);
+  border-top: rgb(240, 240, 240) solid 3px;  
+  border-right: rgb(161, 161, 161) solid 3px; 
+  border-bottom: rgb(29, 29, 29) solid 3px;   
+  border-left:rgb(204, 204, 204) solid 3px;  
+  padding: 0;
+  line-height: 1;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;  
+  border-radius: 2px;
+  }
+
+  .deletebtn:hover {
+   color: #ffd900;
+  }
+  
+  .timer {
+  position: absolute;
+  bottom: -15px;
+  left: 40px;
+  background-color: #111111;  
+  color: rgb(255, 208, 1);
+  border-top: rgb(19, 19, 19) solid 3px;  
+  border-right: rgb(143, 143, 143) solid 3px; 
+  border-bottom: rgb(182, 182, 182) solid 3px;   
+  border-left:rgb(109, 109, 109) solid 3px;  
+  border-radius: 6px;
+  width: 60%; 
+  overflow: hidden;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 2px;
+  padding: 0 4px 2px;
+  line-height: 1;
+  }
+
 .upper {
-  background-color: rgba(44, 165, 202, 0.774);
-  border: solid 1px #000;
-  animation: shadow-pulse 1s infinite;
-  box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
-  transition: box-shadow 0.5s ease-in-out;
+  background-color: var(--color2); 
+  animation: shadow-pulse 1s infinite;  
+  transition: box-shadow 0.5s ease-in-out, transform 0.1s ease-in-out;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a2aec8c2-1121-475c-97a1-2ca91a2b6949/dbu7ayo-fb07a9c3-3135-453e-90ef-d0cfe204c647.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyYWVjOGMyLTExMjEtNDc1Yy05N2ExLTJjYTkxYTJiNjk0OVwvZGJ1N2F5by1mYjA3YTljMy0zMTM1LTQ1M2UtOTBlZi1kMGNmZTIwNGM2NDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LLayDvMeiDFysKbq3NLyc-mqC8QxuyrxZHtpiOBrsRQ);
+  background-repeat: no-repeat;
+  background-size:contain;
 }
-.upper:hover {
-  background-color: rgba(31, 181, 226, 0.87);
+.upper:hover {  
+  transform: translateY(10px);
+  transition: transform 0.1s ease-in-out;  
 }
 
 .downer {
-  background-color: rgba(197, 197, 197, 0.616);
+  background-color: rgba(197, 197, 197, 0.616);  
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/452/816/905/circuits-electronics-digital-art-wallpaper-preview.jpg); 
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom center;
+  border-top: rgb(230, 228, 228) solid 3px;  
+  border-right: rgb(105, 100, 100) solid 3px; 
+  border-bottom: rgb(41, 35, 35) solid 3px;   
+  border-left:rgb(121, 113, 113) solid 3px;
+  transition: transform 0.1s ease-in-out; 
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px; 
 }
+
 .downer:hover {
-  background-color: rgba(112, 177, 197, 0.616);
+  transform: translateY(-10px);
+  transition: transform 0.1s ease-in-out; 
+}
+
+.downer #person {
+  border-top: rgb(230, 228, 228) solid 3px;  
+  border-right: rgb(105, 100, 100) solid 3px; 
+  border-bottom: rgb(41, 35, 35) solid 3px;   
+  border-left:rgb(121, 113, 113) solid 3px; 
+  color: rgb(180, 180, 180);
+}
+
+.downer .timer {
+  border-top: rgb(230, 228, 228) solid 3px;  
+  border-right: rgb(105, 100, 100) solid 3px; 
+  border-bottom: rgb(41, 35, 35) solid 3px;   
+  border-left:rgb(121, 113, 113) solid 3px;  
+  color: rgb(180, 180, 180);
+  font-size: 16px;
+  bottom: -2px;
+  padding: 6px;
+}
+
+.downer .deletebtn {
+  border-top: rgb(230, 228, 228) solid 3px;  
+  border-right: rgb(105, 100, 100) solid 3px; 
+  border-bottom: rgb(41, 35, 35) solid 3px;   
+  border-left:rgb(121, 113, 113) solid 3px;
 }
 
 @keyframes shadow-pulse {
   0% 
   {
-    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
+    box-shadow: 0 0 1px #fff, 0 0 6px #fff, 0 0 9px;
   }
   50%
   {
-    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #00ffea91, 0 0 12px #00fff2b0, 0 0 15px #00e1ff;
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 12px #ff000091, 0 0 8px #ff590cb0, 0 0 15px #fffb00;
   }
   100%
   {
-    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px;
-  }}
+    box-shadow: 0 0 1px #fff, 0 0 6px #fff, 0 0 9px;
+}}
 
 
-#ui {
- 
+
+
+#ui { 
   background-color: var(--color3) ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 10% 0 10%;
-  
-  box-shadow: 0 -2px 3px #fff, 0 -9px 52px 6px #00f7ff8a, 0 -5px 9px #00ffea;
-  
+  padding: 0 10% 0 10%;  
+  box-shadow: 0 -2px 4px #fffde0, 0 -7px 12px #ff8800, 0 -9px 52px 18px #ff00008a;  
 }
 
 #ui input, select, button{
   max-width: 200px;
-  max-height: 20px;
+  max-height: 30px;
   margin: 6px 6px;
-  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-  
-}
-
-.deletebtn {
-width: 20px;
-height: 20px;
-color: white;
-cursor: pointer;
-position: absolute;
-bottom: 0;
-left: 2px;
-border: 1px black solid;
-background-color: rgb(206, 106, 75);
-text-align: center;
-font-size: 10px;
-
-}
-
-.timer {
-position: absolute;
-bottom: -10px;
-left: 30px;
-border: 1px black solid;
-width: 74px;
-background-color: rgb(126, 246, 255);
-overflow: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));  
 }
 
 .text {
