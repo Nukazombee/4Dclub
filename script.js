@@ -63,6 +63,7 @@ const addbtn = document.querySelector("#addbtn");
       timer.innerHTML = "Completed";
       persondiv.classList.remove("upper");
       persondiv.classList.add("downer");
+      persondiv.classList.add("completed");
       bottoms.appendChild(persondiv);
       }
     };
@@ -78,14 +79,14 @@ const addbtn = document.querySelector("#addbtn");
       if (persondiv.classList.contains("upper")) 
       {
       persondiv.classList.remove("upper");
-      persondiv.classList.add("downer");
+      persondiv.classList.add("downer");      
       bottoms.appendChild(persondiv);
       pause();
       
       } 
       else if (persondiv.classList.contains("downer") && timer.innerHTML != "Completed") 
       {
-      persondiv.classList.remove("downer");
+      persondiv.classList.remove("downer");      
       persondiv.classList.add("upper");
       tops.appendChild(persondiv);
       resume();
@@ -96,6 +97,7 @@ const addbtn = document.querySelector("#addbtn");
         countDown();
         persondiv.classList.remove("downer");
         persondiv.classList.add("upper");
+        persondiv.classList.remove("completed");
         tops.appendChild(persondiv);
       }
       

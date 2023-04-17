@@ -173,6 +173,11 @@
   border-left:rgb(121, 113, 113) solid 3px;
 }
 
+.completed .timer {
+  background-color: var(--color3);
+  color: #111111;
+}
+
 @keyframes shadow-pulse {
   0% 
   {
